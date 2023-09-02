@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: dymafr/chap19-node
+          image: dymafr/chap19-node:ea5e219
           ports:
             - containerPort: 80
           env: 
