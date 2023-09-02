@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: dymafr/chap19-front:f9b9a3c
+          image: dymafr/chap19-front:20ae380
           ports:
             - containerPort: 80
           volumeMounts:
