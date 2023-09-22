@@ -22,10 +22,10 @@ spec:
     spec:
       containers:
         - name: api
-          image: dymafr/chap19-node:20ae380
+          image: dymafr/projet5-node
           ports:
             - containerPort: 80
-          env: 
+          env:
             - name: JWT_PUBLIC_KEY
               valueFrom:
                 secretKeyRef:
@@ -47,8 +47,8 @@ spec:
               value: root
           resources:
             requests:
-              memory: "512Mi"
-              cpu: "250m"
+              memory: '512Mi'
+              cpu: '250m'
           livenessProbe:
             httpGet:
               path: /api/user/current

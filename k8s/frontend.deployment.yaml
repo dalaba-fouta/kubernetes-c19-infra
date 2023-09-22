@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: dymafr/chap19-front:20ae380
+          image: dymafr/projet5-vue
           ports:
             - containerPort: 80
           volumeMounts:
