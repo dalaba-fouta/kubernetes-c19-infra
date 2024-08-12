@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: vue-auth
+  name: site-comm
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/dymafr/kubernetes-c19-infra.git
+    repoURL: git@github.com:dalaba-fouta/kubernetes-c19-infra.git
     targetRevision: master
     path: k8s
   destination:
